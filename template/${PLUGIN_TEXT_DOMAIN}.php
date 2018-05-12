@@ -65,6 +65,13 @@ if ( ! class_exists( '${PLUGIN_CLASS_NAME}' ) ) {
 			} else {
 				$this->load_plugin_textdomain();
 				$this->includes();
+				$serializer = new ${PLUGIN_CLASS_NAME}_Serializer();
+				$serializer->init();
+
+				$deserializer = new ${PLUGIN_CLASS_NAME}_Deserializer();
+
+				$admin = new ${PLUGIN_CLASS_NAME}_Submenu( new ${PLUGIN_CLASS_NAME}_Submenu_Page( $deserializer ) );
+				$admin->init();
 			}
 		}
 
@@ -75,7 +82,11 @@ if ( ! class_exists( '${PLUGIN_CLASS_NAME}' ) ) {
 		 */
 		public function includes() {
 			include_once 'includes/${PLUGIN_TEXT_DOMAIN}-functionality.php';
-			include_once 'admin/${PLUGIN_TEXT_DOMAIN}-admin.php';
+			// include_once 'admin/${PLUGIN_TEXT_DOMAIN}-admin.php';
+			include_once( plugin_dir_path( __FILE__ ) . 'admin/${PLUGIN_TEXT_DOMAIN}-class-deserializer.php' );
+			foreach ( glob( plugin_dir_path( __FILE__ ) . 'admin/*.php' ) as $file ) {
+				include_once $file;
+			}
 		}
 
 		/**
