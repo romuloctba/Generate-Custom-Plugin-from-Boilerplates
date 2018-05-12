@@ -74,7 +74,8 @@ if ( ! class_exists( '${PLUGIN_CLASS_NAME}' ) ) {
 		 * @var string
 		 */
 		public function includes() {
-			include_once 'includes/woocommerce-extension-functionality.php';
+			include_once 'includes/${PLUGIN_TEXT_DOMAIN}-functionality.php';
+			include_once 'admin/${PLUGIN_TEXT_DOMAIN}-admin.php';
 		}
 
 		/**
