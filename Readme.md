@@ -10,7 +10,13 @@
 
 - Simply run `npm start`
 
-### .DEFAULT_SETTINGS explained:
+### .DEFAULT_SETTINGS explained in 1, 2, 3, 4:
+
+1) Variables: An list of used variables across the template
+2) variableValues: A key -> Value object used to translate the variable
+3) templatePath: folder that contains the templated files
+4) dist: the path to the desired output folder, where the finished custom plugin will be after running this.
+
 
 ```
 module.exports = {
