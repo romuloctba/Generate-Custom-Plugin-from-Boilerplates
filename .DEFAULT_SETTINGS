@@ -1,0 +1,20 @@
+module.exports = {
+    variables: [
+        '${PLUGIN_NAME}',
+        '${PLUGIN_AUTHOR}',
+        '${PLUGIN_TEXT_DOMAIN}',
+        '${PLUGIN_DESCRIPTION}',
+        '${PLUGIN_CLASS_NAME}',
+        '${PLUGIN_URL}'
+    ],
+    variableValues: {
+        '${PLUGIN_NAME}': 'Test Plugin Name',
+        '${PLUGIN_TEXT_DOMAIN}': 'test_plugin_domain',
+        '${PLUGIN_DESCRIPTION}': 'Test plugin description. This is very nice',
+        '${PLUGIN_CLASS_NAME}': 'Test_Plugin_Class',
+        '${PLUGIN_AUTHOR}': 'RCDev',
+        '${PLUGIN_URL}': 'http://rcdevlabs.github.io'
+    },
+    templatePath: './template',
+    dist: '../woo-dist'
+};

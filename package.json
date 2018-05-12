@@ -1,0 +1,19 @@
+{
+  "name": "woo_plugin_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generate_woo_plugin.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "glob": "^7.1.2",
+    "ncp": "^2.0.0",
+    "rimraf": "^2.6.2"
+  }
+}
