@@ -1,11 +1,14 @@
-# New Plugin from boilerplate generator
+# Custom Plugin From Boilerplate 
 
-- Use this to make a boilerplate quickly reusable, by setting simple variables to customize your project.
+- Use this to make custom plugins from standard boilerplates, in a quick and reusable way.
 
-- The included example uses https://github.com/ViLourenco/woocommerce-extension-plugin-boilerplate as a template. The version *with variables* is in the ./template folder
+- The included [example](https://github.com/romuloctba/Generate-Custom-Plugin-from-Boilerplates/tree/master/template) uses [Vi Lourenco's WooCommerce Extension Plugin Boilerplate](https://github.com/ViLourenco/woocommerce-extension-plugin-boilerplate) as a template. 
 
-- Check the `.DEFAULT_SETTINGS` file, replacing the variable contents as you wish
-- then run npm start
+**The version *with variables* is in the [./template folder](https://github.com/romuloctba/Generate-Custom-Plugin-from-Boilerplates/tree/master/template)**
+
+- Se the [`.DEFAULT_SETTINGS`](https://github.com/romuloctba/Generate-Custom-Plugin-from-Boilerplates/blob/master/.DEFAULT_SETTINGS) file, replacing the variable contents as you wish
+
+- Simply run `npm start`
 
 ### .DEFAULT_SETTINGS explained:
 
